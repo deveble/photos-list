@@ -8,23 +8,34 @@
 
 import UIKit
 
-class PhotoCell: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class PhotoCell: UICollectionViewCell {
+    
+    var bgImage: UIImage? {
+        didSet {
+            guard let bgImage = bgImage else { return }
+            bgImageView.image = bgImage
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    let bgImageView: UIImageView = {
+       let iv = UIImageView()
+        iv.translatesAutoresizingMaskIntoConstraints = false
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        iv.layer.cornerRadius = 12
+        return iv
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        contentView.addSubview(bgImageView)
+        bgImageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        bgImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        bgImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        bgImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }
-    */
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

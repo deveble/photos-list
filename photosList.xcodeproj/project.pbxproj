@@ -3,27 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CEE3555923F6C610006D1BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3555823F6C610006D1BF4 /* AppDelegate.swift */; };
 		CEE3555B23F6C610006D1BF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3555A23F6C610006D1BF4 /* SceneDelegate.swift */; };
-		CEE3555D23F6C610006D1BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3555C23F6C610006D1BF4 /* ViewController.swift */; };
 		CEE3556023F6C610006D1BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE3555E23F6C610006D1BF4 /* Main.storyboard */; };
 		CEE3556223F6C615006D1BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3556123F6C615006D1BF4 /* Assets.xcassets */; };
 		CEE3556523F6C615006D1BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE3556323F6C615006D1BF4 /* LaunchScreen.storyboard */; };
+		CEE3556D23F6D322006D1BF4 /* VerticalPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3556C23F6D322006D1BF4 /* VerticalPhotosVC.swift */; };
+		CEE3557023F6D574006D1BF4 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = CEE3556F23F6D574006D1BF4 /* Hero */; };
+		CEE3557223F6D665006D1BF4 /* HorizontalPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3557123F6D665006D1BF4 /* HorizontalPhotosVC.swift */; };
+		CEE3557423F6D69C006D1BF4 /* PhotoHeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3557323F6D69C006D1BF4 /* PhotoHeroVC.swift */; };
+		CEE3557623F6D6BF006D1BF4 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3557523F6D6BF006D1BF4 /* PhotoCell.swift */; };
+		CEE3557823F6D6E0006D1BF4 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3557723F6D6E0006D1BF4 /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEE3555523F6C610006D1BF4 /* photosList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photosList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE3555823F6C610006D1BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE3555A23F6C610006D1BF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEE3555C23F6C610006D1BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEE3555F23F6C610006D1BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEE3556123F6C615006D1BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE3556423F6C615006D1BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE3556623F6C615006D1BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE3556C23F6D322006D1BF4 /* VerticalPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPhotosVC.swift; sourceTree = "<group>"; };
+		CEE3557123F6D665006D1BF4 /* HorizontalPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPhotosVC.swift; sourceTree = "<group>"; };
+		CEE3557323F6D69C006D1BF4 /* PhotoHeroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHeroVC.swift; sourceTree = "<group>"; };
+		CEE3557523F6D6BF006D1BF4 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CEE3557723F6D6E0006D1BF4 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE3557023F6D574006D1BF4 /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +68,11 @@
 			children = (
 				CEE3555823F6C610006D1BF4 /* AppDelegate.swift */,
 				CEE3555A23F6C610006D1BF4 /* SceneDelegate.swift */,
-				CEE3555C23F6C610006D1BF4 /* ViewController.swift */,
+				CEE3557123F6D665006D1BF4 /* HorizontalPhotosVC.swift */,
+				CEE3556C23F6D322006D1BF4 /* VerticalPhotosVC.swift */,
+				CEE3557323F6D69C006D1BF4 /* PhotoHeroVC.swift */,
+				CEE3557523F6D6BF006D1BF4 /* PhotoCell.swift */,
+				CEE3557723F6D6E0006D1BF4 /* PhotoModel.swift */,
 				CEE3555E23F6C610006D1BF4 /* Main.storyboard */,
 				CEE3556123F6C615006D1BF4 /* Assets.xcassets */,
 				CEE3556323F6C615006D1BF4 /* LaunchScreen.storyboard */,
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = photosList;
+			packageProductDependencies = (
+				CEE3556F23F6D574006D1BF4 /* Hero */,
+			);
 			productName = photosList;
 			productReference = CEE3555523F6C610006D1BF4 /* photosList.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = CEE3554C23F6C610006D1BF4;
+			packageReferences = (
+				CEE3556E23F6D574006D1BF4 /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = CEE3555623F6C610006D1BF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE3555D23F6C610006D1BF4 /* ViewController.swift in Sources */,
 				CEE3555923F6C610006D1BF4 /* AppDelegate.swift in Sources */,
 				CEE3555B23F6C610006D1BF4 /* SceneDelegate.swift in Sources */,
+				CEE3556D23F6D322006D1BF4 /* VerticalPhotosVC.swift in Sources */,
+				CEE3557423F6D69C006D1BF4 /* PhotoHeroVC.swift in Sources */,
+				CEE3557823F6D6E0006D1BF4 /* PhotoModel.swift in Sources */,
+				CEE3557623F6D6BF006D1BF4 /* PhotoCell.swift in Sources */,
+				CEE3557223F6D665006D1BF4 /* HorizontalPhotosVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deveble.photosList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deveble.photosList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -336,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEE3556E23F6D574006D1BF4 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEE3556F23F6D574006D1BF4 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE3556E23F6D574006D1BF4 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEE3554D23F6C610006D1BF4 /* Project object */;
 }
